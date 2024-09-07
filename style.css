@@ -51,7 +51,7 @@ header > div.logo {
   /* border: 1px solid; */
 }
 
-.titre {
+header > .titre {
   margin: 0.5%;
   display: flex;
   justify-content: center;
@@ -62,23 +62,24 @@ header > div.logo {
   background-color: rgb(44, 165, 42);
 }
 
-.contact {
+header > .contact {
   margin: 0.5%;
   padding: 1%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 15%;
   height: 100%;
   /* border: 1px solid; */
   background-color: rgb(42, 77, 165);
 }
 
-.contact > a {
+header > .contact > a {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   text-decoration: none;
   cursor: pointer;
   color: azure;
@@ -234,6 +235,7 @@ footer > .contact {
   flex-direction: column;
   width: 15%;
   height: 100%;
+  background-color: #333;
 }
 
 footer > .contact > h5 {
@@ -349,6 +351,12 @@ h6 {
 .logo a {
   text-align: center;
   font-size: 2vw;
+}
+
+header > .contact > a:nth-child(2) {
+  text-align: center;
+  font-size: 1.4vw;
+  color: #fff;
 }
 
 nav > ul > li {
