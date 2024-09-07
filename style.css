@@ -28,7 +28,7 @@ header {
   /* border: 1px solid; */
 }
 
-.logo {
+header > div.logo {
   margin: 0.5%;
   display: flex;
   justify-content: center;
@@ -187,9 +187,20 @@ figure {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 50%;
+  height: 80%;
   background-color: rgb(231, 226, 195);
   /* border: 1px solid; */
+}
+
+article > p {
+  margin: 0.5%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(231, 226, 195);
 }
 
 section {
@@ -207,7 +218,7 @@ section {
 footer {
   padding: 0.5%;
   width: 100%;
-  height: 20vh;
+  height: 40vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,10 +226,48 @@ footer {
   /* border: 1px solid; */
 }
 
-footer > .liens {
+footer > .contact {
+  margin: 0.5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+}
+
+footer > .contact > h5 {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer > div.contact > .logo {
   margin: 0.5%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+}
+
+body > footer > div.contact > a:nth-child(3) {
+  margin: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer > .liens {
+  margin: 0.5%;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 70%;
@@ -228,10 +277,28 @@ footer > .liens {
   /* border: 1px solid; */
 }
 
-footer > .partenaires {
+footer > .liens > h5 {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer > .liens > a {
   margin: 0.5%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer > .partenaires {
+  margin: 0.5%;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 15%;
@@ -241,31 +308,36 @@ footer > .partenaires {
   /* border: 1px solid; */
 }
 
-/* typographie */
-h1 {
-  margin: 0.5%;
-  padding: 0.5%;
+footer > .partenaires > h5 {
+  margin: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 90%;
-  text-align: justify;
+  width: 100%;
+  height: 100%;
+}
+
+footer > .partenaires > a {
+  margin: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* typographie */
+h1 {
+  text-align: center;
   font-size: 5vw;
 }
 h2 {
+  text-align: center;
 }
 h3 {
+  text-align: center;
 }
 h4 {
-  margin: 0.5%;
-  padding: 0.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
-  text-align: justify;
   font-size: 2vw;
   background-color: transparent;
 }
@@ -274,44 +346,63 @@ h5 {
 h6 {
 }
 
-p {
-  margin: 0.5%;
-  padding: 0.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
+.logo a {
+  text-align: center;
+  font-size: 2vw;
+}
+
+nav > ul > li {
+  text-align: center;
+  font-size: 2.2vw;
+}
+
+article {
+  text-align: center;
+  font-size: 2.8vw;
+}
+
+article > figure {
+  text-align: center;
+  font-size: 2vw;
+}
+
+article > p {
   text-align: justify;
-  font-size: 1.9vh;
-  background-color: rgb(231, 226, 195);
-  /* border: 1px solid; */
+  font-size: 1.9vw;
+}
+
+section > p {
+  text-align: justify;
+  font-size: 1.9vw;
 }
 
 aside > p {
-  margin: 0.5%;
-  padding: 0.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
   text-align: justify;
-  font-size: 2vw;
-  background-color: transparent;
-}
-
-li {
-}
-
-a {
+  font-size: 1.9vw;
 }
 
 figure {
+  text-align: justify;
+  font-size: 1.9vw;
 }
 
-footer > div a {
+footer h5 {
+  font-size: 2vw;
+  color: #fff;
+  font-family: "Roboto Slab", sans-serif;
 }
 
-button {
+body > footer > div.contact > a {
+  font-size: 1.8vw;
+  color: #fff;
+}
+
+footer > .liens > a {
+  font-size: 1.8vw;
+  color: #fff;
+}
+
+footer > .partenaires > a {
+  font-size: 1.8vw;
+  color: #fff;
 }
